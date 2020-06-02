@@ -50,7 +50,7 @@ wouldn't require a parametric form of the distribution to be available.
 
 Here is a [^1] parenthetical remark
 
-[^1] Some additional things
+[^1]: Some additional things
 
 ```python
 # An example of code hightlighting
