@@ -46,4 +46,15 @@ $\sqrt{(\theta_1 - \theta_2)^2 + (\sigma_1^2 - \sigma_2^2)}$. However, our ideal
 of closeness would work for any two distributions (assuming they have the same support), and
 wouldn't require a parametric form of the distribution to be available.
 
-There are two very common `closeness' measures for 
+## Here is a heading
+
+Here is a [^1] parenthetical remark
+
+[^1] Some additional things
+
+```python
+# An example of code hightlighting
+def square(x):
+    return x * x
+derivative = grad(square)(4.)
+```
