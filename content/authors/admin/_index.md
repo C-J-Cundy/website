@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: Machine Learning PhD Student
 
 # Organizations/Affiliations
 organizations:
@@ -18,42 +18,40 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: I'm a PhD student at Stanford University, advised by Stefano Ermon
 
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Probabilistic Machine Learning
+- Generative Models
+- Reinforcement Learning
+- Safe and Reliable ML
 
 education:
   courses:
-  - course: PhD in Artificial Intelligence
+  - course: PhD in Computer Science
     institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+    year: 2018-Ongoing
+  - course: MEng in Computer Science
+    institution: Cambridge University
+    year: 2017
+  - course: BA in Natural Sciences (Physics)
+    institution: Cambridge University
+    year: 2016
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
-- icon: envelope
-  icon_pack: fas
-  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
+  link: https://twitter.com/ChrisCundy
 - icon: google-scholar
   icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://scholar.google.com/citations?user=TWAn5XoAAAAJ&hl
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/C-J-Cundy
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -70,6 +68,34 @@ user_groups:
 - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+I am broadly interested in Artificial Intelligence (AI), particularly in
+ensuring that sophisticated AI systems will robustly and reliably carry out the
+tasks that we want them to.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+If you're a student at Stanford (undergraduate/masters/PhD) who wants to work on
+a project involving safe and reliable machine learning: get in touch!
+
+I studied Physics as an undergraduate at Cambridge University before switching
+area to take a Computer Science Master's Degree. My Master's thesis was in the
+area of Bayesian inference for timeseries, investigating variational methods for
+inference in Gaussian Process State-Space Models. I was supervised
+by [Carl E. Rasmussen](http://mlg.eng.cam.ac.uk/carl)
+
+After graduating, I spent a summer at
+the [Centre for Human Compatible AI](http://humancompatible.ai) at
+UC Berkeley, working with [Stuart Russell](https://people.eecs.berkeley.edu/~russell)
+and [Daniel Filan](http://danielfilan.com) on new approaches to incorporating human irrationality into
+Inverse Reinforcement Learning. I presented a poster on this work at
+the [First workshop on goals and specification](https://sites.google.com/view/goalsrl/home)
+in Reinforcement Learning at ICML 2018. In my spare time, I
+took on a project on efficiently parallelizing Long Short-Term Memory units
+(LSTM)s in collaboration with Eric Martin, where we were able to obtain a 9x
+speedup for several popular RNN architectures. I presented the work as a poster
+at [ICLR 2018](https://openreview.net/forum?id=SkHEwdgCZ).
+
+For the nine months until June 2018, I worked at the Future of Humanity
+Institute at Oxford University, collaborating
+with [Owain Evans](https://owainevans.github.io) on scalable human
+supervision of complex AI tasks.
+
+Get in touch at chris dot j dot cundy at gmail dot com
