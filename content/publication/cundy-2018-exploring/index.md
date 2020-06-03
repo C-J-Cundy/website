@@ -7,5 +7,6 @@ publication_types: ["2"]
 abstract: ""
 featured: false
 publication: "*First Workshop on Goal Specifications for Reinforcement Learning, ICML 2018*"
+url_pdf: https://arxiv.org/pdf/1807.05037.pdf
 ---
 
