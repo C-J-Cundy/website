@@ -7,5 +7,9 @@ publication_types: ["2"]
 abstract: ""
 featured: false
 publication: "*International Conference on Learning Representations*"
+url_pdf: https://arxiv.org/abs/1709.04057
+url_reviews: https://openreview.net/forum?id=HyUNwulC-
+url_code: https://github.com/eamartin/parallelizing_linear_rnns
+url_poster: '#'
 ---
 
