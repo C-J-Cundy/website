@@ -1,5 +1,5 @@
 +++
-title = "blog post: Managing ArXiv RSS Feeds in Emacs"
+title = "Managing ArXiv RSS Feeds in Emacs"
 author = ["Chris Cundy"]
 draft = false
 +++
