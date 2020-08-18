@@ -81,9 +81,9 @@ pleasure to work with [Carl E. Rasmussen](http://mlg.eng.cam.ac.uk/carl),
 developing variational methods for Gaussian Process State-Space Models.
 
 Before starting my PhD at Stanford, I worked at the [Centre for Human
-Compatible AI](http://humancompatible.ai), working with [Stuart
+Compatible AI](http://humancompatible.ai), collaborating with [Stuart
 Russell](https://people.eecs.berkeley.edu/~russell) and [Daniel
-Filan](http://danielfilan.com). I also worked at the Future of
+Filan](http://danielfilan.com). I have also worked at the Future of
 Humanity Institute at Oxford University, collaborating with [Owain
 Evans](https://owainevans.github.io) on scalable human supervision of
 complex AI tasks.
