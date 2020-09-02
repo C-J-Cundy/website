@@ -11,7 +11,7 @@ that are being published, especially in the fast-moving field of machine learnin
 
 However, there are a lot of papers from the arxiv categories
 which I follow, sometimes hundreds of papers a day.
-Some people use twitter, Reddit etc to find interesting
+Some people use Twitter, Reddit etc to find interesting
 papers. This is definitely better than not following the
 literature at all, but there's a risk of missing papers
 that are relevant to your work. There are some tools that
@@ -21,12 +21,12 @@ Personally, I use the [Fraser Lab](https://fraserlab.com/2013/09/28/The-Fraser-L
 This requires exhaustively looking at all the articles, but
 with a varying amount of attention spent on each one.
 
-Most articles need just a few seconds to look at the title and authors to
+For most articles, it only takes a few seconds to look at the title and authors to
 see if I'm interested in it. For those that I am interested in,
 I read the abstract to decide whether it would be useful to read the full paper.
 (At this point, even if I don't read the full paper I hit the [zotero importer](https://www.zotero.org/support/adding%5Fitems%5Fto%5Fzotero) to automatically pull it into zotero and my bibtex file in case I later realise it's worth reading further).
 For the papers I decide to read, I'll typically skim the main results
-in a few minutes, and possibly jot things like the setting or
+in a few minutes, and possibly jot down some things like the setting or
 referenced papers which seem interesting. For a handful of papers
 a week, I'll read them in more detail and make extensive notes.
 
@@ -42,18 +42,19 @@ abstract by default, which is awkward to read, and generally doesn't display any
 for quick scanning.
 
 There are increasingly annoying items in the feed that are actually adverts that feedly has inserted.
-Recently I've been using emacs for taking notes and programming, so
+Recently I've been using emacs more and more for taking notes and programming, so
 I thought it would be interesting to see if it's possible to process
 RSS feeds in emacs. There were a few issues. At first I tried using `org-feed`, the built-in
 RSS-reader for emacs' org-mode. I managed to get a rudimentary system working, but in the end I
-developed a much better workflow using `elfeed`
+developed a much better workflow using `elfeed`.
 
 
 ## Elfeed {#elfeed}
 
 I ended up using [elfeed](https://github.com/skeeto/elfeed) as the main engine to process RSS feeds.
-The initial user experience really wasn't optimal, but elfeed is designed really nicely to be very customizable.
-After (quite a lot of) tweaking, and learning a fair amount of emacs lisp in the process, this is what it looks like now.
+The initial user experience wasn't quite as I'd like, but elfeed is designed really nicely to be very customizable.
+After (quite a lot of) tweaking, and learning a fair amount of emacs lisp in the process, the system looks
+much nicer. A comparison is shown below:
 
 {{< figure src="/ox-hugo/old_elfeed.png" caption="Figure 1: The original presentation of papers from arxiv in elfeed." >}}
 
@@ -89,7 +90,7 @@ My `elfeed-org` file looks like this:
 ** [[http://export.arxiv.org/api/query?search_query=cat:cs.LG&start=0&max_results=300&sortBy=submittedDate&sortOrder=descending][LG]]
 ```
 
-This imports the last 300 items from the statistic theory and machine learning arxiv feeds.
+This imports the last 300 items from the statistics theory and machine learning arxiv feeds.
 
 
 ### New `elfeed-search-print-entry-function` {#new-elfeed-search-print-entry-function}
@@ -168,9 +169,9 @@ We're ready to define the new `elfeed-search-print-entry-function`. This is the 
 (setq elfeed-search-print-entry-function #'my-search-print-fn)
 ```
 
-I put the this in my .emacs file. I needed to fiddle with the number at the end of the `(authors-column)` s-expression in order for the display to fit properly on my screen. I also commented out the tags display since I don't use tags. This defines a view with a wide paper name column, a wide authors column, and a narrow space to list which feed the paper came from.
+I put the this in my `.emacs` file. I needed to fiddle with the number at the end of the `(authors-column)` s-expression in order for the display to fit properly on my screen. I also commented out the tags display since I don't use tags. This defines a view with a wide paper name column, a wide authors column, and a narrow space to list which feed the paper came from.
 
-The next thing was using the fork of elfeed from [alphapapa](https://github.com/alphapapa/elfeed/tree/feature/excerpts) to provide excerpts. With this, I can press \`e' while my cursor (in emacs terms, _the point_)is on an entry and it will pop open the abstract directly in the page, instead of having to go onto the entry itself to read the abstract. This would require pressing enter and then `q` to go back. It's not a major feature but it's nice-to-have. To do this I just swapped in the fork file in my `~/.emacs.d/elpa/elfeed`.
+The next thing was using the fork of elfeed from [alphapapa](https://github.com/alphapapa/elfeed/tree/feature/excerpts) to provide excerpts. With this, I can press `e` while my cursor (in emacs terms, _the point_) is on an entry and it will pop open the abstract directly in the page, instead of having to go onto the entry itself to read the abstract. This would require pressing enter and then `q` to go back. It's not a major feature but it's nice-to-have. To do this I just swapped in the fork file in my `~/.emacs.d/elpa/elfeed`.
 
 
 ### Elfeed-score {#elfeed-score}
