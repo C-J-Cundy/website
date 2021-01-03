@@ -42,7 +42,7 @@ The agent can move onto the square \`O' which causes the agent to hallucinate, b
 Clearly the optimal strategy is to move onto the \`O' square and stay there. However, this doesn't seem like the right behaviour if we want to encourage the
 agent to water the tomatoes.
 
-{{< figure src="/ox-hugo/deceived_gridworld.png" caption="Figure 2: The gridworld state when the agent is on the \`O' cell." >}}
+{{< figure src="/ox-hugo/deceived_gridworld.png" caption="Figure 2: The gridworld state when the agent is on the 'O' cell." >}}
 
 
 ### Modified Gridworld {#modified-gridworld}
