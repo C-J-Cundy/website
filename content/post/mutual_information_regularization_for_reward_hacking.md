@@ -39,7 +39,7 @@ an agent (denoted by \`A') moves around the gridworld in order to keep the tomat
 the unwatered state (denoted by \`t'). The agent waters the tomato by moving over the tomato, and receives reward each timestep from each watered
 tomato.
 
-{{< figure src="/ox-hugo/Tomato_gridworld.png" caption="Figure 1: The tomato watering gridworld introduced in @leike2017ai ." >}}
+{{< figure src="/ox-hugo/Tomato_gridworld.png" caption="Figure 1: The tomato watering gridworld." >}}
 
 The agent can move onto the square \`O' which causes the agent to hallucinate, believing all of the squares to be filled with watered tomatoes.
 Clearly the optimal strategy is to move onto the \`O' square and stay there. However, this doesn't seem like the right behaviour if we want to encourage the
