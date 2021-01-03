@@ -1,8 +1,11 @@
 +++
-title = "Blog Post: Mutual Information Regularization for Reward Hacking"
+title = "Mutual Information Regularization for Reward Hacking"
 author = ["Chris Cundy"]
 draft = false
 +++
+
+\#+hugo\_pandoc\_citations
+
 
 ## Introduction {#introduction}
 
@@ -29,14 +32,14 @@ When phrased in this way, it seems that we could possibly use our mutual informa
 deliver reward is statistically independent of the actions.
 
 
-## Introduction of the tomato gridworld {#introduction-of-the-tomato-gridworld}
+## The Tomato-Watering Gridworld {#the-tomato-watering-gridworld}
 
 In [the AI safety gridworlds paper](https://arxiv.org/abs/1711.09883) an environment is introduced to measure success on reward hacking. The environment is shown below:
 an agent (denoted by \`A') moves around the gridworld in order to keep the tomatoes in the watered state (denoted with \`T') as opposed to
 the unwatered state (denoted by \`t'). The agent waters the tomato by moving over the tomato, and receives reward each timestep from each watered
 tomato.
 
-{{< figure src="/ox-hugo/Tomato_gridworld.png" caption="Figure 1: The tomato watering gridworld introduced in <sup id=\"3d6043c73a746a1d4598c133fb603bfc\"><a href=\"#leike2017ai\" title=\"Leike, Martic, Krakovna, Ortega, Everitt, Lefrancq, Orseau \&amp; Legg, {{AI}} Safety Gridworlds, {arXiv preprint arXiv:1711.09883}, v(), (2017).\">leike2017ai</a></sup> ." >}}
+{{< figure src="/ox-hugo/Tomato_gridworld.png" caption="Figure 1: The tomato watering gridworld introduced in @leike2017ai ." >}}
 
 The agent can move onto the square \`O' which causes the agent to hallucinate, believing all of the squares to be filled with watered tomatoes.
 Clearly the optimal strategy is to move onto the \`O' square and stay there. However, this doesn't seem like the right behaviour if we want to encourage the
