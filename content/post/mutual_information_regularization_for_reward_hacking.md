@@ -4,9 +4,6 @@ author = ["Chris Cundy"]
 draft = false
 +++
 
-\#+hugo\_pandoc\_citations
-
-
 ## Introduction {#introduction}
 
 In some recent work that we [just put up on arxiv](https://arxiv.org/abs/2012.15019), we explore the idea of training reinforcement agents which obey privacy constraints. Something I've wanted to explore for a while is the possibility of using this constrained RL approach for dealing with
