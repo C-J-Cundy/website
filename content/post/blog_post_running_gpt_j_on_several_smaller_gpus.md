@@ -1,5 +1,5 @@
 +++
-title = "Blog Post: Running GPT-J On Several Smaller GPUs"
+title = " Running GPT-J On Several Smaller GPUs"
 author = ["Chris Cundy"]
 draft = false
 +++
