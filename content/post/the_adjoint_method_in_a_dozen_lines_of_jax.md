@@ -12,11 +12,11 @@ The Adjoint Method is a powerful method for computing derivatives of functions i
 
 ### Setting {#setting}
 
-Our setting involves two vectors, \\(x \in \R^{d\_x}\\) and \\(\theta \in \R^{d\_\theta}\\).
+Our setting involves two vectors, \\(x \in \mathbb{R}^{d\_x}\\) and \\(\theta \in \mathbb{R}^{d\_\theta}\\).
 We want to find the gradient (with respect to \\(\theta\\)) of a function
-\\(f: \R^{d\_x} \times \R^{d\_\theta} \to \R\\). Here, \\(x\\) is implicitly
+\\(f: \mathbb{R}^{d\_x} \times \mathbb{R}^{d\_\theta} \to \mathbb{R}\\). Here, \\(x\\) is implicitly
 defined as a solution to \\(g(x, \theta) = \boldsymbol{0}\\) for
-\\(g: \R^{d\_x} \times \R^{d\_\theta} \to \R^{d\_x}\\). This is a set of \\(d\_x\\) equations.
+\\(g: \mathbb{R}^{d\_x} \times \mathbb{R}^{d\_\theta} \to \mathbb{R}^{d\_x}\\). This is a set of \\(d\_x\\) equations.
 
 As a completely trivial example, we could consider \\(f(x, \theta) = x + \theta\\), subject to
 \\(x = \theta\\), which we can write as \\(g(x, \theta) = 0\\) for \\(g(x, \theta) = x - \theta\\).
@@ -27,10 +27,10 @@ As a more complicated example, consider \\(\theta\\) parameterising the design o
 ### The Adjoint Equation {#the-adjoint-equation}
 
 The core of the adjoint method is in the following equations.
-I'm going to use \\(\partial\_a b\\) to denote the [Jacobian](https://en.wikipedia.org/wiki/Jacobian%5Fmatrix%5Fand%5Fdeterminant) of the function \\(b\\) with respect to \\(a\\). This is a matrix in \\(\R^{d\_{\text{out}}\times d\_{\text{in}}}\\), where \\(d\_\text{out}\\) is the dimension of the output of \\(b\\) and \\(d\_{\text{in}}\\) is the dimension of the input of \\(b\\), and \\(\left(\partial \_a b)\_{ij}\\) is the derivative of the \\(i\\)th coordinate of the output of \\(b\\) with respect to the \\(j\\)th coordinate of the input.
+I'm going to use \\(\partial\_a b\\) to denote the [Jacobian](https://en.wikipedia.org/wiki/Jacobian%5Fmatrix%5Fand%5Fdeterminant) of the function \\(b\\) with respect to \\(a\\). This is a matrix in \\(\mathbb{R}^{d\_{\text{out}}\times d\_{\text{in}}}\\), where \\(d\_\text{out}\\) is the dimension of the output of \\(b\\) and \\(d\_{\text{in}}\\) is the dimension of the input of \\(b\\), and \\((\partial \_a b)\_{ij}\\) is the derivative of the \\(i\\)th coordinate of the output of \\(b\\) with respect to the \\(j\\)th coordinate of the input.
 It's worth belabouring this point since the adjoint method involves a lot of algebra with Jacobians.
 
-We first define an **adjoint vector** \\(\lambda \in \R^{d\_x}\\) as the solution to the equation
+We first define an **adjoint vector** \\(\lambda \in \mathbb{R}^{d\_x}\\) as the solution to the equation
 
 \begin{align\*}
 (\partial\_x g)^\top \lambda = -(\partial\_x f)^\top.
@@ -59,7 +59,7 @@ Alternatively, using the adjoint method we have to solve \\(-1\lambda = -1\\), g
 ### Circles {#circles}
 
 Let's consider a more involved example, although still a bit contrived. As we run through this on paper, we'll also use JAX to double-check everything. In this problem, \\(\theta = [r, \varphi, {\hat x}\_0, {\hat x}\_1]\\) ,
-\\(f(x, \theta) = \\|x - w\\|^2\\) for some fixed \\(w\in\R^2\\), and \\(g(x, \theta) = \left[x\_0 - (r\cos\varphi + {\hat x}\_0), x\_1 - (r\sin\varphi + {\hat x}\_1)\right]\\).
+\\(f(x, \theta) = \\|x - w\\|^2\\) for some fixed \\(w\in\mathbb{R}^2\\), and \\(g(x, \theta) = \left[x\_0 - (r\cos\varphi + {\hat x}\_0), x\_1 - (r\sin\varphi + {\hat x}\_1)\right]\\).
 In other words, \\(\theta\\) defines a circle with centre \\(x\_0, x\_1\\), and a point on the circle with polar coordinates \\(r, \varphi\\).
 
 ```python
