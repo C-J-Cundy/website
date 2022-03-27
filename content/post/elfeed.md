@@ -2,6 +2,7 @@
 title = "Managing ArXiv RSS Feeds in Emacs"
 author = ["Chris Cundy"]
 draft = false
+date: "2020-08-17T13:00:00+00:00"
 +++
 
 ## Background {#background}

@@ -2,6 +2,7 @@
 title = "Installing cdt R prerequisites in Ubuntu without root"
 author = ["Chris Cundy"]
 draft = false
+date: "2020-12-02T13:00:00+00:00"
 +++
 
 I wanted to use some of the tools from the
