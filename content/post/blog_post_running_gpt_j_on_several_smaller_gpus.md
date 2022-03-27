@@ -2,7 +2,7 @@
 title = " Running GPT-J On Several Smaller GPUs"
 author = ["Chris Cundy"]
 draft = false
-date: "2021-06-24T13:00:00+00:00"
+date = "2021-06-24T13:00:00+00:00"
 +++
 
 ## Introduction {#introduction}

@@ -2,7 +2,7 @@
 title = "Using Codex in Emacs"
 author = ["Chris Cundy"]
 draft = false
-date: "2022-03-26T13:00:00+00:00"
+date = "2022-03-26T13:00:00+00:00"
 +++
 
 ## Introduction {#introduction}

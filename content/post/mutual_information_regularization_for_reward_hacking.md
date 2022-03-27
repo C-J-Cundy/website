@@ -2,7 +2,7 @@
 title = "Mutual Information Regularization for Reward Hacking"
 author = ["Chris Cundy"]
 draft = false
-date: "2021-01-05T13:00:00+00:00"
+date = "2021-01-05T13:00:00+00:00"
 +++
 
 ## Introduction {#introduction}

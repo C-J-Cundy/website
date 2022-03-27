@@ -2,7 +2,7 @@
 title = "The Adjoint Method in a Dozen Lines of JAX"
 author = ["Chris Cundy"]
 draft = false
-date: "2021-09-10T13:00:00+00:00"
+date = "2021-09-10T13:00:00+00:00"
 +++
 
 The Adjoint Method is a powerful method for computing derivatives of functions involving constrained optimization. It's been around for a long time, but recently has been popping up in machine learning, used in papers such as the [Neural ODE](https://arxiv.org/abs/1806.07366) and many others. I found it a bit hard to grasp until I implemented some toy examples in JAX. This post outlines the adjoint method, and steps through some concrete examples using JAX. I also discuss how this method interacts with modern autodiff.
