@@ -19,7 +19,7 @@ Some general impressions
 
 ## An Example {#an-example}
 
-The following is a set of commands that I ran.
+The following is a set of commands that I gave to the language model as per my previous post.
 
 > Write a function to do tabular Q-learning on a simple gridworld
 >
