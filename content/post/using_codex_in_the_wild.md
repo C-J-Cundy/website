@@ -2,6 +2,7 @@
 title = "Using Codex in the Wild"
 author = ["Chris Cundy"]
 draft = false
+date = "2022-04-15T13:00:00+00:00"
 +++
 
 ## Introduction {#introduction}
