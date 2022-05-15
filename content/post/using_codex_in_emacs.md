@@ -269,4 +269,76 @@ INPUT and INSTRUCTIONS are the strings that will go into the respective API fiel
 (global-set-key "\C-c\C-x\C-e" 'codex-edit)
 ```
 
-And it's that simple!
+And it's that simple! I also have a similar setup for getting using the text-edit and code-complete functionality, with python files
+
+```python
+#!/Users/chris/miniconda3/envs/python3/bin/python
+import os
+import openai
+import sys
+
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
+response = openai.Edit.create(
+    engine="text-davinci-edit-001",
+    input=f"{sys.argv[1]}",
+    instruction=f"{sys.argv[2]}",
+    temperature=1,
+    top_p=0.9,
+)
+response_text = response.choices[0].text
+sys.stdout.write(response_text)
+```
+
+```python
+#!/Users/chris/miniconda3/envs/python3/bin/python
+import os
+import openai
+import sys
+
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
+response = openai.Completion.create(
+    engine="code-davinci-002",
+    # prompt=f"{sys.argv[1]}",
+    prompt="""{0}""".format(sys.argv[1]),
+    temperature=0.05,
+    max_tokens=512,
+    top_p=1,
+    frequency_penalty=0,
+    presence_penalty=0,
+    best_of=4,
+)
+
+response_text = response.choices[0].text
+sys.stdout.write(response_text)
+
+```
+
+and additional lines in my `.emacs`
+
+```emacs-lisp
+ (setenv "OPENAI_API_KEY" "[REDACTED]")
+
+(setq codex-complete-helper-location "/Users/chris/.emacs.d/codex_complete.py")
+(setq text-edit-helper-location "/Users/chris/.emacs.d/text_0.py")
+
+(defun text-edit (instructions)
+  "Interactively asks for INSTRUCTIONS, combines with region or empty string."
+  (interactive "sInstructions:")
+  (let ((resulting-text (get-codex-edit-output text-edit-helper-location (maybe-get-region) instructions)))
+    (if (use-region-p)
+      (progn
+	(kill-region (region-beginning) (region-end))
+	(insert resulting-text))
+	(insert resulting-text))))
+
+(defun codex-complete ()
+  "Interactively asks for INSTRUCTIONS, combines with region or whole buffer."
+  (interactive)
+  (let ((resulting-text (get-codex-complete-output codex-complete-helper-location (get-region-or-buffer) )))
+    (insert resulting-text)))
+
+(global-set-key "\C-c\C-t\C-e" 'text-edit)
+(global-set-key "\C-c\C-x\C-c" 'codex-complete)
+```
