@@ -1,7 +1,8 @@
 +++
 title = "GPT-4 Memorizes Project Euler Numerical Solutions"
-author = ["Foo X. Bar"]
+author = ["Chris Cundy "]
 draft = false
+date = "2023-03-28T13:00:00+00:00"
 +++
 
 I've been really impressed with the ability of GPT-4 to answer tough technical questions recently,
