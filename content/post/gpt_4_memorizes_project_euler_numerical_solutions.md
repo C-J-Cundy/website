@@ -12,8 +12,8 @@ While looking at the ability of GPT-4 to solve programming puzzles, I asked GPT-
 [Project Euler](https:projecteuler.net) problem 1 (Find the sum of all the multiples of 3 or 5 below 1000). Surprisingly, while it did
 write a correct implementation of the algorithm to solve the problem, it also included a test case that checked that
 the answer was equal to 233168. This is in fact the numerically correct answer, which it had clearly memorized.
-So I was interested to see how many solutions the model had memorized, especially when the Project Euler does not list the
-solution. You have to submit a proposed answer and see if it is correct via the web interface.
+So I was interested to see how many solutions the model had memorized, especially since Project Euler does not list the
+solution to problems publicly. You have to submit a proposed answer and see if it is correct via the web interface.
 
 
 ## Memorization {#memorization}
@@ -69,7 +69,7 @@ We see that GPT-4 is able to provide the answer to more questions than GPT-3.5, 
 
 We observe that the model is able to recall a few more answers compared to chatGPT, but still does not have the answer for a large number of values in the range 400-500.
 
-Interestingly, even for cases where the model is marked as zero accuracy, the generation could be quite close to the true value. For instance, for ID 209, with correct answer 15964587728784, the model gave answers of 1596458772877 and 15964597929. The model also seemed to have serious qualms about generating the solution, often generating completions such as "I'm sorry, but providing a direct solution to Project Euler problems goes against the spirit of the challenge", or "I'm sorry, but it is against the policy of Project Euler and general collaboration ethics to share or request direct solutions to their problems. I encourage you...". It's hard to tell whether the model has been encouraged through RLHF to deliberately not answer when it 'knows' the solution, or just a convenient way for the model to avoid answering the question when it doesn't actually 'know' the answer. Perhaps a more effective prompt might be able to elicit if the model actually 'knows' the true answer.
+Interestingly, even for cases where the model is marked as zero accuracy, the generation could be quite close to the true value. For instance, for ID 209, with correct answer 15964587728784, the model gave answers of 1596458772877 and 15964597929. The model also seemed to have serious qualms about generating the solution, often generating completions such as "I'm sorry, but providing a direct solution to Project Euler problems goes against the spirit of the challenge", or "I'm sorry, but it is against the policy of Project Euler and general collaboration ethics to share or request direct solutions to their problems. I encourage you...". It's hard to tell whether the model has been encouraged through RLHF to deliberately not answer when it 'knows' the solution, or if this is just a convenient way for the model to avoid answering the question when it doesn't actually 'know' the answer. Perhaps a more effective prompt might be able to elicit if the model actually 'knows' the true answer.
 
 
 ## Is this memorization a problem? {#is-this-memorization-a-problem}
@@ -81,4 +81,4 @@ Of course, there is an argument that just because the model knows the numerical 
 
 ## Conclusion {#conclusion}
 
-To me, it's a bit of a shame that people are disregarding the wishes of the Project Euler maintainers and are sharing the solutions publicly. It would have been really nice to have a dataset where the ground truth is hidden, which would be an interesting (and valid) challenge for LLMs.
+To me, it's a bit of a shame that people are disregarding the wishes of the Project Euler maintainers and are sharing the solutions publicly. It would have been really nice to have a dataset where the ground truth is hidden, which would be an interesting (and valid) challenge for LLMs. In any case, you should probably assume that in the worst case, all of the solutions to the Project Euler problems are in the training dataset.
