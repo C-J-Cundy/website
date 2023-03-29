@@ -82,6 +82,3 @@ Of course, there is an argument that just because the model knows the numerical 
 ## Conclusion {#conclusion}
 
 To me, it's a bit of a shame that people are disregarding the wishes of the Project Euler maintainers and are sharing the solutions publicly. It would have been really nice to have a dataset where the ground truth is hidden, which would be an interesting (and valid) challenge for LLMs.
-
-
-## References {#references}
