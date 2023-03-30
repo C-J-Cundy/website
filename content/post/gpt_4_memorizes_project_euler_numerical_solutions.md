@@ -9,7 +9,7 @@ I've been really impressed with the ability of GPT-4 to answer tough technical q
 and have made my own research assistant based on a GPT-4 backbone.
 
 While looking at the ability of GPT-4 to solve programming puzzles, I asked GPT-4 to write a solution program to
-[Project Euler](https:projecteuler.net) problem 1 (Find the sum of all the multiples of 3 or 5 below 1000). Surprisingly, while it did
+[Project Euler](https://projecteuler.net) problem 1 (Find the sum of all the multiples of 3 or 5 below 1000). Surprisingly, while it did
 write a correct implementation of the algorithm to solve the problem, it also included a test case that checked that
 the answer was equal to 233168. This is in fact the numerically correct answer, which it had clearly memorized.
 So I was interested to see how many solutions the model had memorized, especially since Project Euler does not list the
