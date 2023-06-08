@@ -6,6 +6,6 @@ authors: ["Chris Cundy"]
 publication_types: ["3"]
 abstract: ""
 featured: false
-publication: ""
+publication: "*Master's Thesis*"
 ---
 

@@ -25,6 +25,7 @@ interests:
 - Generative Models
 - Reinforcement Learning
 - Safe and Reliable ML
+- Large Language Models
 
 education:
   courses:
@@ -67,8 +68,8 @@ user_groups:
 - Researchers
 - Visitors
 ---
-
-I am broadly interested in Artificial Intelligence (AI), particularly in
+I am a PhD student at Stanford University, advised by [Stefano Ermon](https://cs.stanford.edu/~ermon/)
+I'm broadly interested in Artificial Intelligence (AI), particularly in
 ensuring that sophisticated AI systems will robustly and reliably carry out the
 tasks that we want them to.
 

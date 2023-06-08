@@ -6,8 +6,7 @@ authors: ["Eric Martin", "Chris Cundy"]
 publication_types: ["1"]
 abstract: ""
 featured: false
-publication: "*International Conference on Learning Representations*"
-publication_short: "*ICLR*"
+publication: "*International Conference on Learning Representations (ICLR)*"
 url_pdf: https://arxiv.org/abs/1709.04057
 url_reviews: https://openreview.net/forum?id=HyUNwulC-
 url_code: https://github.com/eamartin/parallelizing_linear_rnns
