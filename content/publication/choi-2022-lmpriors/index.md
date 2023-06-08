@@ -10,4 +10,6 @@ publication: "*First Workshop on Foundation Models for Decision Making, Neurips 
 url_pdf: https://arxiv.org/abs/2210.12530
 url_poster: https://nips.cc/media/PosterPDFs/NeurIPS%202022/59640.png?t=1667865786.2184136
 url_video: https://nips.cc/virtual/2022/59640
+url_slides: lm_priors_presentation.pdf
+url_transcript: lm_priors_presentation_script.md
 ---
