@@ -31,7 +31,7 @@ education:
   courses:
   - course: PhD in Computer Science
     institution: Stanford University
-    year: 2018-Ongoing
+    year: 2018-2024
   - course: MEng in Computer Science
     institution: Cambridge University
     year: 2017
