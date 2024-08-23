@@ -10,22 +10,22 @@ authors:
 superuser: true
 
 # Role/position
-role: Machine Learning PhD Student
+role: Research Scientist
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
-  url: ""
+- name: FAR AI
+  url: "https://far.ai"
 
 # Short bio (displayed in user profile at end of posts)
-bio: I'm a PhD student at Stanford University, advised by Stefano Ermon
+bio: I'm a Research Scientist at FAR AI
 
 interests:
+- Deceptive Behavior from LLMs
+- Risk Evaluation and Elicitation
+- Governance of Frontier Models
+- Adversarial Robustness
 - Probabilistic Machine Learning
-- Generative Models
-- Reinforcement Learning
-- Safe and Reliable ML
-- Large Language Models
 
 education:
   courses:
@@ -68,25 +68,20 @@ user_groups:
 - Researchers
 - Visitors
 ---
-I am a PhD student at Stanford University, advised by [Stefano Ermon](https://cs.stanford.edu/~ermon/).
-I'm broadly interested in Artificial Intelligence (AI), particularly in
-ensuring that sophisticated AI systems will robustly and reliably carry out the
-tasks that we want them to.
+I am a Research Scientist at [FAR AI](https://far.ai), researching topics to reduce catastrophic risks 
+from advanced AI systems. If you are doing similar work, please reach out -- I'd love to hear from you!
+We are also [hiring](https://far.ai/jobs/).
 
-If you're a student at Stanford (undergraduate/masters/PhD) who wants to work on
-a project involving safe and reliable machine learning: get in touch!
+I have a PhD from Stanford University, wonderfully advised by [Stefano Ermon](https://cs.stanford.edu/~ermon/).
+During my PhD, I studied a diverse range of topics including constrained reinforcement learning, variational inference,
+and autoregressive models.
 
-I studied Physics as an undergraduate at Cambridge University before switching
-area to take a computer science master's degree. During my master's, it was a
+Previously Physics for my undergrad and took a Computer Science Master's. It was a
 pleasure to work with [Carl E. Rasmussen](http://mlg.eng.cam.ac.uk/carl),
 developing variational methods for Gaussian Process State-Space Models.
 
-Before starting my PhD at Stanford, I worked at the [Centre for Human
-Compatible AI](http://humancompatible.ai), collaborating with [Stuart
-Russell](https://people.eecs.berkeley.edu/~russell) and [Daniel
-Filan](http://danielfilan.com). I have also worked at the Future of
-Humanity Institute at Oxford University, collaborating with [Owain
-Evans](https://owainevans.github.io) on scalable human supervision of
-complex AI tasks.
+I have also interned at the [Centre for Human
+Compatible AI](http://humancompatible.ai), the Future of
+Humanity Institute at Oxford University, and DeepMind.
 
 Get in touch at chris dot j dot cundy at gmail dot com
