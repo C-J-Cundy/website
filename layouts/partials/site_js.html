@@ -1,0 +1,57 @@
+{{ $scr := $.Scratch }}
+{{ $js := site.Data.assets.js }}
+
+{{/* Combine and minify custom JS */}}
+{{ $js_bundle := resources.Get "js/main.js" | resources.ExecuteAsTemplate "js/main.js" . }}
+{{ if not site.IsServer }}
+  {{ $js_bundle = $js_bundle | minify | fingerprint "md5" }}
+{{ end }}
+<script src="{{ $js_bundle.RelPermalink }}" defer></script>
+
+{{/* Load only necessary third-party libraries */}}
+{{ if not ($scr.Get "use_cdn") }}
+  <script src="{{ printf "/js/vendor/%s" ($scr.Get "vendor_js_filename") | relURL }}" defer></script>
+{{ else }}
+  <script src="{{ printf $js.jQuery.url $js.jQuery.version }}" integrity="{{ $js.jQuery.sri }}" crossorigin="anonymous" defer></script>
+  {{ if site.Params.gallery }}
+    <script src="{{ printf $js.imagesLoaded.url $js.imagesLoaded.version }}" integrity="{{ $js.imagesLoaded.sri }}" crossorigin="anonymous" defer></script>
+    <script src="{{ printf $js.isotope.url $js.isotope.version }}" integrity="{{ $js.isotope.sri }}" crossorigin="anonymous" defer></script>
+    <script src="{{ printf $js.fancybox.url $js.fancybox.version }}" integrity="{{ $js.fancybox.sri }}" crossorigin="anonymous" defer></script>
+  {{ end }}
+
+  {{ if $.Scratch.Get "highlight_enabled" }}
+    {{ $v := $js.highlight.version }}
+    <script src="{{ printf $js.highlight.url $v }}" integrity="{{ $js.highlight.sri }}" crossorigin="anonymous"></script>
+    {{ range site.Params.highlight_languages }}
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/{{ $v }}/languages/{{ . }}.min.js" defer></script>
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* Maps JS */}}
+{{ if and (eq site.Params.map.engine 1) (site.Params.map.api_key) }}
+  <script src="https://maps.googleapis.com/maps/api/js?key={{ site.Params.map.api_key }}" async defer></script>
+{{ else if and (or (eq site.Params.map.engine 2) (eq site.Params.map.engine 3)) ($scr.Get "use_cdn") }}
+  <script src="{{ printf $js.leaflet.url $js.leaflet.version }}" integrity="{{ $js.leaflet.sri }}" crossorigin="anonymous" defer></script>
+{{ end }}
+
+{{/* Initialise code highlighting */}}
+<script>const code_highlighting = {{ if $scr.Get "highlight_enabled" }}true{{ else }}false{{ end }};</script>
+
+{{/* Initialise default theme */}}
+<script>const isSiteThemeDark = {{ if eq ($scr.Get "light") true }}false{{ else }}true{{ end }};</script>
+
+{{ if ne site.Params.search.engine 0 }}
+  {{/* Configure search engine */}}
+  {{ $search_config := dict "indexURI" ("/index.json" | relLangURL) "threshold" (site.Params.search.academic.threshold | default 0.3) "minLength" (site.Params.search.academic.min_length | default 1) }}
+  <script>
+    const search_config = {{ $search_config | jsonify | safeJS }};
+    const i18n = {{ dict "placeholder" (i18n "search_placeholder") "results" (i18n "search_results") "no_results" (i18n "search_no_results") | jsonify | safeJS }};
+    const content_type = {
+      'post': {{ i18n "posts" }},
+      'project': {{ i18n "projects" }},
+      'publication' : {{ i18n "publications" }},
+      'talk' : {{ i18n "talks" }}
+    };
+  </script>
+{{ end }}
