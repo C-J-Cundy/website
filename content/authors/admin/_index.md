@@ -76,7 +76,7 @@ I have a PhD from Stanford University, wonderfully advised by [Stefano Ermon](ht
 During my PhD, I studied a diverse range of topics including constrained reinforcement learning, variational inference,
 and autoregressive models.
 
-Previously Physics for my undergrad and took a Computer Science Master's. It was a
+I studied Physics for my undergrad and took a Computer Science Master's. It was a
 pleasure to work with [Carl E. Rasmussen](http://mlg.eng.cam.ac.uk/carl),
 developing variational methods for Gaussian Process State-Space Models.
 
