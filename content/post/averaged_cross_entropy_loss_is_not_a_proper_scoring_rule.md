@@ -5,8 +5,11 @@ draft = false
 date = "2024-11-10T12:00:00+00:00"
 +++
 
-In [a recent paper](https://arxiv.org/abs/2306.05426) we wrote when referring to the KL divergence that `In some domains, the length of the sequences n differs in each example, which can be incorporated by choosing an effective length N = max n, and treating all sequences shorter than N as having a sequence of padding tokens appended`, with a footnote that `Some care is required here, as averaging the loss of each example over its length leads to an inconsistent estimator`.
-Although we wrote `an inconsistent estimator` in the paper, more precisely we should have specified that it is not a \`proper scoring rule': in other words, the minimizer of a certain type of cross-entropy loss with variable-length sequences (in fact, the default loss in PyTorch) is not the data generating distribution.
+In [a recent paper](https://arxiv.org/abs/2306.05426) we wrote when referring to the KL divergence that 
+>In some domains, the length of the sequences n differs in each example, which can be incorporated by choosing an effective length N = max n, and treating all sequences shorter than N as having a sequence of padding tokens appended, 
+with a footnote that 
+>Some care is required here, as averaging the loss of each example over its length leads to an inconsistent estimator.
+Although we wrote 'an inconsistent estimator' in the paper, more precisely we should have specified that it is not a `proper scoring rule': in other words, the minimizer of a certain type of cross-entropy loss with variable-length sequences (in fact, the default loss in PyTorch) is not the data generating distribution.
 
 Here I will elaborate on this point a bit more, and discuss why I doubt it's a problem for modern sequence modelling in practice.
 
