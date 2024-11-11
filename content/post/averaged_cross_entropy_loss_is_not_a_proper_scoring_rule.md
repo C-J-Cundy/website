@@ -1,7 +1,8 @@
 +++
 title = "(Averaged) Cross-Entropy Loss is not a Proper Scoring Rule"
-author = ["Foo X. Bar"]
+author = ["Chris Cundy"]
 draft = false
+date = "2024-11-10T12:00:00+00:00"
 +++
 
 In [a recent paper](https://arxiv.org/abs/2306.05426) we wrote when referring to the KL divergence that `In some domains, the length of the sequences n differs in each example, which can be incorporated by choosing an effective length N = max n, and treating all sequences shorter than N as having a sequence of padding tokens appended`, with a footnote that `Some care is required here, as averaging the loss of each example over its length leads to an inconsistent estimator`.
