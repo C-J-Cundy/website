@@ -25,10 +25,6 @@
   [headers.values]
     Content-Type = "application/rss+xml"
 
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Content-Encoding = "gzip"
 
 [[headers]]
   for = "/*"
