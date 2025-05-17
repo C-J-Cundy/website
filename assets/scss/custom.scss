@@ -2,12 +2,18 @@
 
 // Move content up to compensate for missing navbar
 .home-section:first-of-type {
-  padding-top: 30px;
+  padding-top: 10px; /* Reduced from 30px */
 }
 
-// Add some minimal padding at the top of the page
+// Add minimal padding at the top of the page
 .page-body {
-  padding-top: 20px;
+  padding-top: 10px; /* Reduced from 20px */
+}
+
+// Reduce space above profile
+#profile {
+  margin-top: 0;
+  padding-top: 0;
 }
 
 // Optimize avatar image - make it identifiable as LCP
@@ -21,6 +27,14 @@
   display: block !important;
 }
 
+// Make name under profile picture 50% larger
+.portrait-title h2 {
+  font-size: 2.25rem !important; /* 50% larger than default 1.5rem */
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
 // Improve critical path rendering
 body {
   display: block !important;
@@ -28,5 +42,5 @@ body {
 
 // Reduce white space
 .home-section {
-  padding: 40px 0;
+  padding: 20px 0 40px 0; /* Reduced top padding from 40px to 20px */
 }
