@@ -10,10 +10,15 @@
   padding-top: 20px;
 }
 
-// Make avatar image load faster
+// Optimize avatar image - make it identifiable as LCP
 .avatar {
   width: 270px;
   height: 270px;
+  contain: paint;
+  content-visibility: auto;
+  contain-intrinsic-size: 270px 270px;
+  /* Add importance to help Lighthouse identify it as LCP */
+  display: block !important;
 }
 
 // Improve critical path rendering
