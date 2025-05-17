@@ -1,0 +1,16 @@
+{
+  "name": "chris-cundy-website",
+  "version": "1.0.0",
+  "description": "Personal academic website with aggressive optimization",
+  "scripts": {
+    "build": "hugo --gc --minify"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.0",
+    "cssnano": "^5.0.0",
+    "html-minifier": "^4.0.0",
+    "postcss": "^8.4.0",
+    "postcss-cli": "^9.0.0",
+    "terser": "^5.10.0"
+  }
+}
