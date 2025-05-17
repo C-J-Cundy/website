@@ -2,12 +2,14 @@
 
 // Move content up to compensate for missing navbar
 .home-section:first-of-type {
-  padding-top: 10px; /* Reduced from 30px */
+  padding-top: 0; /* Completely removed padding */
+  margin-top: 0;
 }
 
 // Add minimal padding at the top of the page
 .page-body {
-  padding-top: 10px; /* Reduced from 20px */
+  padding-top: 0; /* Completely removed padding */
+  margin-top: 0;
 }
 
 // Reduce space above profile
@@ -42,5 +44,11 @@ body {
 
 // Reduce white space
 .home-section {
-  padding: 20px 0 40px 0; /* Reduced top padding from 40px to 20px */
+  padding: 5px 0 40px 0; /* Minimal top padding, just 5px */
+}
+
+// Extra: ensure container starts at the top too
+.container {
+  margin-top: 0;
+  padding-top: 0;
 }
