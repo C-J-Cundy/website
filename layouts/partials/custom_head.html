@@ -3,12 +3,33 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<!-- Non-blocking CSS loading -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" media="print" onload="this.media='all'">
+<!-- 
+ICON LOADING STRATEGY:
+The icons in the social bar are critical for the UI and visible in the viewport immediately.
+Loading them asynchronously causes layout shifts and inconsistent sizing/alignment.
+We load these synchronously to ensure they render correctly on first paint.
+
+Problem we're solving:
+1. When Font Awesome and Academicons load at different times due to async loading,
+   they apply their styles at different moments, causing icons to appear at different sizes
+2. This is particularly visible with the social icons in the header where some use Font Awesome (fab)
+   and others use Academicons (ai)
+3. By loading both synchronously, we ensure consistent rendering at the cost of a small performance hit,
+   which is acceptable since these are critical UI elements
+-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css">
+
+<!-- 
+NON-CRITICAL CSS LOADING:
+We can still use async loading for non-critical CSS that isn't needed for above-the-fold content.
+This maintains performance benefits for resources that don't affect initial render.
+-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous" media="print" onload="this.media='all'">
 
 <!-- Fallback for browsers that don't support media="print" onload -->
 <noscript>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css">
 </noscript>
