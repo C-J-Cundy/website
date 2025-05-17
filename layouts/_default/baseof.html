@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="{{ site.LanguageCode | default "en-us" }}">
+
+<head>
+  {{ partial "site_head.html" . }}
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents">
+
+  {{ if eq .Type "docs" }}
+  <div class="container-fluid docs">
+    <div class="row flex-xl-nowrap">
+      <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+        {{ partial "docs_sidebar.html" . }}
+      </div>
+
+      {{ if .Params.toc }}
+      <div class="d-none d-xl-block col-xl-2 docs-toc">
+        <ul class="nav toc-top">
+          <li><a href="#" id="back_to_top" class="docs-toc-title">{{ i18n "on_this_page" }}</a></li>
+        </ul>
+
+        {{ .TableOfContents }}
+
+        {{ partial "docs_toc_foot.html" . }}
+      </div>
+      {{ end }}
+
+      <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+        <article class="article">
+
+          {{ partial "page_header.html" . }}
+
+          <div class="article-container">
+
+            <div class="article-style">
+              {{ .Content }}
+            </div>
+
+            {{ partial "page_footer.html" . }}
+
+          </div>
+        </article>
+
+        {{ partial "site_footer.html" . }}
+
+      </main>
+    </div>
+  </div>
+  {{ else }}
+  <div class="page-header header--fixed">
+    <!-- Search removed -->
+    <aside class="search-results" id="search">
+      <div class="container">
+        <section class="search-header">
+          <div class="row no-gutters justify-content-between mb-3">
+            <div class="col-6">
+              <h1>{{ i18n "search" }}</h1>
+            </div>
+            <div class="col-6 col-search-close">
+              <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div id="search-box">
+          </div>
+        </section>
+        <section class="section-search-results">
+          <div id="search-hits">
+          </div>
+        </section>
+      </div>
+    </aside>
+
+    <!-- No navbar here - completely removed -->
+  </div>
+
+  <div class="page-body">
+    {{/* Nested within academic's theme layout. */}}
+    <div class="container">
+      <!-- no breadcrumb -->
+    </div>
+    <div class="container">
+      {{ block "main" . }}{{ end }}
+    </div>
+
+    <div class="container">
+      {{ partial "site_footer.html" . }}
+    </div>
+  </div>
+  {{ end }}
+
+  {{ partial "site_js.html" . }}
+
+</body>
+
+</html>
