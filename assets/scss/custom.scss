@@ -1,0 +1,27 @@
+// Add custom CSS to improve page layout without navbar
+
+// Move content up to compensate for missing navbar
+.home-section:first-of-type {
+  padding-top: 30px;
+}
+
+// Add some minimal padding at the top of the page
+.page-body {
+  padding-top: 20px;
+}
+
+// Make avatar image load faster
+.avatar {
+  width: 270px;
+  height: 270px;
+}
+
+// Improve critical path rendering
+body {
+  display: block !important;
+}
+
+// Reduce white space
+.home-section {
+  padding: 40px 0;
+}
