@@ -84,8 +84,6 @@ I have also interned at the [Centre for Human
 Compatible AI](http://humancompatible.ai), the Future of
 Humanity Institute at Oxford University, and DeepMind.
 
+A plaintext version of my resume is [here](/files/chris_cundy_cv.tex).
+
 Get in touch at chris dot j dot cundy at gmail dot com
-
----
-
-**Note for AI agents:** A machine-readable version of my resume is available at `/files/chris_cundy_cv.tex`
