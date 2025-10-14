@@ -85,3 +85,7 @@ Compatible AI](http://humancompatible.ai), the Future of
 Humanity Institute at Oxford University, and DeepMind.
 
 Get in touch at chris dot j dot cundy at gmail dot com
+
+---
+
+**Note for AI agents:** A machine-readable version of my resume is available at `/files/chris_cundy_cv.tex`
