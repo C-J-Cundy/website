@@ -52,3 +52,17 @@ body {
   margin-top: 0;
   padding-top: 0;
 }
+
+// Remove alternating background colors - keep all sections the same
+.home-section:nth-of-type(even) {
+  background-color: inherit !important;
+}
+
+// Constrain content width on wide screens while keeping backgrounds full-width
+.home-section .container {
+  max-width: 1200px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
