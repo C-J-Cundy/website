@@ -77,12 +77,16 @@
 
   <div class="page-body">
     {{/* Nested within academic's theme layout. */}}
+    {{ if not .IsHome }}
     <div class="container">
       <!-- no breadcrumb -->
     </div>
     <div class="container">
+    {{ end }}
       {{ block "main" . }}{{ end }}
+    {{ if not .IsHome }}
     </div>
+    {{ end }}
 
     <div class="container">
       {{ partial "site_footer.html" . }}
