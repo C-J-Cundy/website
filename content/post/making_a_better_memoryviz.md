@@ -1,6 +1,7 @@
 +++
 title = "Making a Better MemoryViz In Rust Without Knowing Rust"
 author = ["Chris Cundy"]
+date = 2026-02-22
 draft = false
 +++
 
