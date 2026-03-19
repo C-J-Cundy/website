@@ -59,6 +59,12 @@ Supervised by Daniel Filan & Stuart Russell, researching topics in AI safety:
 
 ## Selected Publications
 
+**The Obfuscation Atlas: Mapping Where Honesty Emerges in RLVR with Deception Probes**
+Mohammad Taufeeque, Stefan Heimersheim, Adam Gleave, Chris Cundy | Preprint, 2026
+
+**Auditing Games for Sandbagging**
+Jordan Taylor, Sid Black, Dillon Bowen, Thomas Read, Satvik Golechha, Alex Zelenka-Martin, Oliver Makins, Connor Kissane, Kola Ayonrinde, Jacob Merizian, Samuel Marks, Chris Cundy, Joseph Bloom | Technical Report, 2025
+
 **Preference Learning with Lie Detectors can Induce Honesty or Evasion**
 Chris Cundy, Adam Gleave | NeurIPS 2025
 
@@ -124,7 +130,7 @@ Supervised five undergraduates on a project finding scaling laws in prompt injec
 Served as supervisor for an undergraduate project on forecasting AI progress.
 
 **Reviewer** | 2020–Present
-Reviewed for the following conferences: UAI (2020, 2022, 2025), ICML (2019, 2020, 2023, 2025), ICLR (2021-2026), NeurIPS (2021-2025), AAAI (Safe and Robust AI track) (2023-2024).
+Reviewed for the following venues: UAI (2020, 2022, 2025, 2026), ICML (2019, 2020, 2023, 2025, 2026), ICLR (2021-2026), NeurIPS (2021-2025), AAAI (Safe and Robust AI track) (2023-2024), TMLR (2025, 2026).
 
 ---
 
