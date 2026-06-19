@@ -60,7 +60,7 @@ Supervised by Daniel Filan & Stuart Russell, researching topics in AI safety:
 ## Selected Publications
 
 **The Obfuscation Atlas: Mapping Where Honesty Emerges in RLVR with Deception Probes**
-Mohammad Taufeeque, Stefan Heimersheim, Adam Gleave, Chris Cundy | Preprint, 2026
+Mohammad Taufeeque, Stefan Heimersheim, Adam Gleave, Chris Cundy | ICML 2026 (oral presentation, top 2.6\% of accepted papers)
 
 **Auditing Games for Sandbagging**
 Jordan Taylor, Sid Black, Dillon Bowen, Thomas Read, Satvik Golechha, Alex Zelenka-Martin, Oliver Makins, Connor Kissane, Kola Ayonrinde, Jacob Merizian, Samuel Marks, Chris Cundy, Joseph Bloom | Technical Report, 2025
