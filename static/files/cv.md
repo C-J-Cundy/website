@@ -31,8 +31,8 @@ Developing algorithms to predict human judgments. Supervised by Owain Evans and 
 ### Visiting Scholar
 **Centre for Human-Compatible AI, University of California, Berkeley** | US | June–September 2017
 
-Supervised by Daniel Filan & Stuart Russell, researching topics in AI safety:
-- Extended previous work on inverse reinforcement learning to hierarchical setting. Formalized the problem, derived theoretical results, performed experiments on data and presented at an ICML workshop
+Supervised by Daniel Filan & Stuart Russell:
+- Analysed inverse reinforcement learning in the hierarchical options setting. Formalized the problem, performed experiments on data and presented at an ICML workshop
 
 ---
 
@@ -48,7 +48,7 @@ Supervised by Daniel Filan & Stuart Russell, researching topics in AI safety:
 **University of Cambridge** | Cambridge, UK | 2016–2017
 - Grade: Distinction
 - Modules: Data Science, Probabilistic Machine Learning, Network Analytics
-- Thesis: *Investigating Variational Gaussian Process State-Space Models with Gaussian Likelihood*. Supervised by Carl E. Rasmussen
+- Supervised by Carl E. Rasmussen
 
 ### BA - Natural Sciences (Physics)
 **University of Cambridge** | Cambridge, UK | 2013–2016
@@ -60,7 +60,7 @@ Supervised by Daniel Filan & Stuart Russell, researching topics in AI safety:
 ## Selected Publications
 
 **The Obfuscation Atlas: Mapping Where Honesty Emerges in RLVR with Deception Probes**
-Mohammad Taufeeque, Stefan Heimersheim, Adam Gleave, Chris Cundy | ICML 2026 (oral presentation, top 2.6\% of accepted papers)
+Mohammad Taufeeque, Stefan Heimersheim, Adam Gleave, Chris Cundy | ICML 2026 (Outstanding paper honorable mention, top seven (0.1%) among accepted papers)
 
 **Auditing Games for Sandbagging**
 Jordan Taylor, Sid Black, Dillon Bowen, Thomas Read, Satvik Golechha, Alex Zelenka-Martin, Oliver Makins, Connor Kissane, Kola Ayonrinde, Jacob Merizian, Samuel Marks, Chris Cundy, Joseph Bloom | Technical Report, 2025
@@ -90,6 +90,12 @@ Eric Martin, Chris Cundy | ICLR 2018
 
 ## Additional Publications
 
+**Scaling Trends for Lie Detector Oversight in Preference Learning**
+Oskar J. Hollinsworth, Ann-Kathrin Dombrowski, Sam Adam-Day, Adam Gleave, Chris Cundy | AI4Good Workshop, ICML 2026
+
+**The Safety Gap Toolkit: Evaluating Hidden Dangers of Open-Source Models**
+Ann-Kathrin Dombrowski, Dillon Bowen, Adam Gleave, Chris Cundy | LockLLM Workshop, NeurIPS 2025
+
 **Sharpe Ratio-Guided Active Learning for Preference Optimization in RLHF**
 Syrine Belakaria, Joshua Kazdan, Charles Marx, Chris Cundy, Willie Neiswanger, Sanmi Koyejo, Barbara E Engelhardt, Stefano Ermon | CoLM 2025
 
@@ -116,7 +122,7 @@ Owain Evans, Andreas Stuhlmüller, Ryan Carey, Neal Jean, Andrew Schreiber, Giri
 ## Service
 
 **Participant, EU AI Act Code of Practice Working Groups 2 and 4** | 2025
-Participated, as an independent expert, in working groups 2 and 4 for the development of the EU AI Act Code of Practice (CoP). I advocated, via written and oral presentation, for the importance of pre- and post-mitigation model evaluations, outlined in an earlier position paper I authored.
+Participated, as an independent expert, in working groups 2 and 4 for the development of the EU AI Act Code of Practice (CoP). I advocated, via oral presentation, for both pre- and post-mitigation model evaluations.
 
 **Teaching Assistant—CS228 (Probabilistic Graphical Models)** | Stanford University | 2023
 
@@ -124,7 +130,7 @@ Participated, as an independent expert, in working groups 2 and 4 for the develo
 Received award for excellence (awarded to top 5% of Teaching Assistants).
 
 **Project Supervisor** | Supervised Project for Alignment Research (SPAR), Stanford AI Alignment | 2023
-Supervised five undergraduates on a project finding scaling laws in prompt injections. Presented work at the 7th Center for Human-Compatible AI workshop.
+Supervised five undergraduates on a project finding scaling laws in prompt injections.
 
 **Project Supervisor** | Undergraduate Research Program, Stanford Existential Risk Initiative | 2021
 Served as supervisor for an undergraduate project on forecasting AI progress.
@@ -139,4 +145,3 @@ Reviewed for the following venues: UAI (2020, 2022, 2025, 2026), ICML (2019, 202
 **Winner, OpenAI Preparedness Challenge** | March 2024
 - One of the top ten submissions for the OpenAI Preparedness Challenge, for submitting *the most unique, while still being probable, potentially catastrophic misuse of the [OpenAI API]*
 - Developed proof-of-concept showing how GPT4-V, and speech-to-text with GPT4, could be used to parse vast amounts of unlabelled surveillance data, finding actionable insights for blackmail or insider trading
-- Prize: $25,000 in OpenAI credits
