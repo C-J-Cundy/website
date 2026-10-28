@@ -5,3 +5,5 @@
 # Hugo
 resources/
 public/
+# Org-mode LaTeX preview cache
+ltximg/
