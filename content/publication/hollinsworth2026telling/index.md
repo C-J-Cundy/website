@@ -8,5 +8,7 @@ abstract: "Recent incidents have highlighted the challenge of monitoring LLM age
 featured: false
 publication: "*Preprint*"
 url_pdf: https://arxiv.org/pdf/2610.12445
+url_code: https://github.com/AlignmentResearch/fibs-probes
+url_dataset: https://huggingface.co/datasets/AlignmentResearch/fibs-v1
 ---
 
