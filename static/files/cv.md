@@ -59,6 +59,9 @@ Supervised by Daniel Filan & Stuart Russell:
 
 ## Selected Publications
 
+**Telling FIBS: Probes Effectively Detect Sabotage and Catch Unverbalized Deception**
+Oskar J. Hollinsworth, Alex F. Spies, Tigist Diriba, Adam Gleave, Chris Cundy | Preprint, 2026
+
 **The Obfuscation Atlas: Mapping Where Honesty Emerges in RLVR with Deception Probes**
 Mohammad Taufeeque, Stefan Heimersheim, Adam Gleave, Chris Cundy | ICML 2026 (Outstanding paper honorable mention, top seven (0.1%) among accepted papers)
 
@@ -73,9 +76,6 @@ Chris Cundy, Stefano Ermon | ICLR 2024
 
 **Privacy-Constrained Policies via Mutual Information Regularized Policy Gradients**
 Chris Cundy, Rishi Desai, Stefano Ermon | AISTATS 2024
-
-**LMPriors: Pre-Trained Language Models as Task-Specific Priors**
-Kristy Choi*, Chris Cundy*, Sanjari Srivasta, Stefano Ermon | First Workshop on Foundation Models for Decision Making, NeurIPS 2022
 
 **BCD Nets: Scalable Variational Approaches for Bayesian Causal Discovery**
 Chris Cundy, Aditya Grover, Stefano Ermon | NeurIPS 2021
@@ -107,6 +107,9 @@ Grégoire Delétang, Anian Ruoss, Jordi Grau-Moya, Tim Genewein, Li Kevin Wenlia
 
 **Towards a foundation model for geospatial artificial intelligence**
 Gengchen Mai, Chris Cundy, Kristy Choi, Yingjie Hu, Ni Lao, Stefano Ermon | Proceedings of the 30th International Conference on Advances in Geographic Information Systems, 2022
+
+**LMPriors: Pre-Trained Language Models as Task-Specific Priors**
+Kristy Choi*, Chris Cundy*, Sanjari Srivasta, Stefano Ermon | First Workshop on Foundation Models for Decision Making, NeurIPS 2022
 
 **IQ-Learn: Inverse soft-Q Learning for Imitation**
 Divyansh Garg, Shuvam Chakraborty, Chris Cundy, Jiaming Song, Stefano Ermon | NeurIPS 2021
